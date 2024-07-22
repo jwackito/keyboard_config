@@ -1,0 +1,57 @@
+--- /usr/share/X11/xkb/symbols/us	2024-07-22 11:12:59.972937511 -0300
++++ ../symbols/us	2024-07-22 12:28:18.363473641 -0300
+@@ -59,6 +59,54 @@
+ 
+ 
+ partial alphanumeric_keys
++xkb_symbols "uses" {
++
++    include "us(basic)"
++    name[Group1]= "US (Spanish variant for coding with caron)";
++    key <TLDE> {[       apostrophe,     acute,  grave, degree ]};
++    key <AE01> {[       1,      exclam,         bar                  ]};
++    key <AE02> {[       2,      quotedbl,       at                 ]};
++    key <AE06> {[       6,      dead_circumflex, notsign     ]       };
++    key <AE07> {[       7,      slash,          ampersand             ]};
++    key <AC10> {[       ntilde,         Ntilde,         asciitilde ] };
++    key <AC11> {[       dead_acute,     dead_diaeresis, dead_caron] };
++    key <AB08> {[       comma,          semicolon,      less            ]       };
++    key <AB09> {[       period,         colon,          greater         ]       };
++    
++    key <AD01> {[         q,    Q,      at              ]};
++    key <AD03> {[         e,    E,      Greek_epsilon,  Greek_EPSILON           ]       };
++    key <AD04> {[         r,    R,      Greek_rho,      Greek_RHO               ]       };
++    key <AD05> {[         t,    T,      Greek_tau,      Greek_TAU               ]       };
++    key <AD06> {[         y,    Y,      Greek_upsilon,  Greek_UPSILON           ]       };
++    key <AD07> {[         u,    U,      Greek_theta,    Greek_THETA             ]       };
++    key <AD08> {[         i,    I,      Greek_iota,     Greek_IOTA              ]       };
++    key <AD09> {[         o,    O,      Greek_omicron,  Greek_OMICRON           ]       };
++    key <AD10> {[         p,    P,      Greek_pi,       Greek_PI                ]       };
++
++    key <AC01> {[         a,    A,      Greek_alpha,    Greek_ALPHA     ]       };
++    key <AC02> {[         s,    S,      Greek_sigma,    Greek_SIGMA             ]       };
++    key <AC03> {[         d,    D,      Greek_delta,    Greek_DELTA             ]       };
++    key <AC04> {[         f,    F,      Greek_phi,      Greek_PHI               ]       };
++    key <AC05> {[         g,    G,      Greek_gamma,    Greek_GAMMA             ]       };
++    key <AC06> {[         h,    H,      Greek_eta,      Greek_ETA              ]       };
++    key <AC07> {[         j,    J,      Greek_xi,       Greek_XI                ]       };
++    key <AC08> {[         k,    K,      Greek_kappa,    Greek_KAPPA                     ]       };
++    key <AC09> {[         l,    L,      Greek_lamda,    Greek_LAMDA             ]       };
++    
++    key <AB01> {[         z,    Z,      Greek_zeta,     Greek_ZETA              ]       };
++    key <AB02> {[         x,    X,      Greek_chi,      Greek_CHI       ]       };
++    key <AB03> {[         c,    C,      Greek_psi,      Greek_PSI       ]       };
++    key <AB04> {[         v,    V,      Greek_omega,    Greek_OMEGA             ]       };
++    key <AB05> {[         b,    B,      Greek_beta,     Greek_BETA      ]       };
++    key <AB06> {[         n,    N,      Greek_nu,       Greek_NU        ]       };
++    key <AB07> {[         m,    M,      Greek_mu,       Greek_MU        ]       };
++
++
++    include "level3(ralt_switch)"
++};
++
++
++partial alphanumeric_keys
+ xkb_symbols "euro" {
+ 
+     include "us(basic)"
